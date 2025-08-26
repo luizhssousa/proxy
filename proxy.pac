@@ -156,6 +156,7 @@ if (dnsDomainIs (host, "client1.google.com") ||
     dnsDomainIs (host, "aadcdn.msftauth.net") ||
     dnsDomainIs (host, "omahaproxy.appspot.com") ||
     dnsDomainIs (host, "cros-omahaproxy.appspot.com"))
+    return "DIRECT";
 
 // Governo
 if (dnsDomainIs (host, "*tjms.jus.br") ||
@@ -164,4 +165,5 @@ if (dnsDomainIs (host, "*tjms.jus.br") ||
 	return "DIRECT";
   
 return "PROXY turbo-02hi3a81.edge.prod.fortisase.com:9443; DIRECT"; 
+
 }
